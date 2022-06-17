@@ -103,7 +103,9 @@
                 }
               }
             }
-          },
+          }
+        },
+        "files": {
           "constants.ts": {
             "template": "other-template",
             "data": {
