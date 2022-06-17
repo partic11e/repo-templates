@@ -1,0 +1,310 @@
+{
+  "$id": "scaffold.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "description": "Describes a scaffolding tree.",
+  "$comment": "When updating the schema or template files, be sure to update the types as well.",
+  "type": "object",
+  "required": ["description", "expected-structure"],
+  "properties": {
+    "expected-structure": {
+      "description": "An outline of the expected structure",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "description": "A description of the scaffold file and what types of projects it is for.",
+      "type": "string"
+    },
+    "root": {
+      "description": "The root of the scaffold tree.",
+      "$ref": "#/definitions/folder"
+    }
+  },
+  "definitions": {
+    "file": {
+      "description": "Specifies to copy and process a template file into the scaffold tree.",
+      "type": "object",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/class-template"
+        },
+        {
+          "$ref": "#/definitions/function-template"
+        },
+        {
+          "$ref": "#/definitions/mod-template"
+        },
+        {
+          "$ref": "#/definitions/other-template"
+        },
+        {
+          "$ref": "#/definitions/version-template"
+        }
+      ]
+    },
+    "folder": {
+      "description": "Specifies to create a directory in the scaffold tree.",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "The description of the folder's purpose",
+          "type": "string"
+        },
+        "files": {
+          "description": "The list of files to scaffold into this directory.",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/file"
+          }
+        },
+        "folders": {
+          "description": "The list of folders to scaffold into this directory.",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/folder"
+          }
+        }
+      }
+    },
+    "class-template": {
+      "properties": {
+        "description": {
+          "description": "The description of the file's purpose",
+          "type": "string"
+        },
+        "template": {
+          "description": "The template file to copy and process.",
+          "enum": [
+            "class-template"
+          ]
+        },
+        "regions": {
+          "description": "The file regions to pre-populate.",
+          "type": "object",
+          "properties": {
+            "feature-import-remote": {
+              "description": "The feature imports from deps.ts that are pulled from remote sources.",
+              "$ref": "#/definitions/region"
+            },
+            "feature-import-local": {
+              "description": "The feature imports from local source files.",
+              "$ref": "#/definitions/region"
+            },
+            "type-import-remote": {
+              "description": "The type imports from deps.ts that are pulled from remote sources.",
+              "$ref": "#/definitions/region"
+            },
+            "type-import-local": {
+              "description": "The type imports from local source files.",
+              "$ref": "#/definitions/region"
+            }
+          }
+        },
+        "data": {
+          "description": "The template data to interpolate into the template.",
+          "type": "object",
+          "properties": {
+            "year": {
+              "description": "The copyright start year. Typically from the generator.",
+              "type": "number"
+            },
+            "description": {
+              "description": "The description of the class. Typically from the generator.",
+              "type": "string"
+            },
+            "abstract": {
+              "description": "Whether the class is abstract or not. Typically from the generator.",
+              "enum": ["", "abstract "]
+            },
+            "className": {
+              "description": "The name of the class. Typically from the generator.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "function-template": {
+      "properties": {
+        "template": {
+          "description": "The template file to copy and process.",
+          "enum": [
+            "function-template"
+          ]
+        },
+        "regions": {
+          "description": "The file regions to pre-populate.",
+          "type": "object",
+          "properties": {
+            "feature-import-remote": {
+              "description": "The feature imports from deps.ts that are pulled from remote sources.",
+              "$ref": "#/definitions/region"
+            },
+            "feature-import-local": {
+              "description": "The feature imports from local source files.",
+              "$ref": "#/definitions/region"
+            },
+            "type-import-remote": {
+              "description": "The type imports from deps.ts that are pulled from remote sources.",
+              "$ref": "#/definitions/region"
+            },
+            "type-import-local": {
+              "description": "The type imports from local source files.",
+              "$ref": "#/definitions/region"
+            }
+          }
+        },
+        "data": {
+          "description": "The template data to interpolate into the template.",
+          "type": "object",
+          "properties": {
+            "year": {
+              "description": "The copyright start year. Typically from the generator.",
+              "type": "number"
+            },
+            "description": {
+              "description": "The description of the class. Typically from the generator.",
+              "type": "string"
+            },
+            "async": {
+              "description": "Whether the function is asynchronous or not. Typically from the generator.",
+              "enum": ["", "async "]
+            },
+            "functionName": {
+              "description": "The name of the function. Typically from the generator.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "mod-template": {
+      "properties": {
+        "template": {
+          "description": "The template file to copy and process.",
+          "enum": [
+            "mod-template"
+          ]
+        },
+        "regions": {
+          "description": "The file regions to pre-populate.",
+          "type": "object",
+          "properties": {
+            "export-types": {
+              "description": "The module type exports.",
+              "$ref": "#/definitions/region"
+            },
+            "export-constants": {
+              "description": "The module constants exports.",
+              "$ref": "#/definitions/region"
+            },
+            "export-features": {
+              "description": "The module feature exports.",
+              "$ref": "#/definitions/region"
+            }
+          }
+        },
+        "data": {
+          "description": "The template data to interpolate into the template.",
+          "type": "object",
+          "properties": {
+            "year": {
+              "description": "The copyright start year. Typically from the generator.",
+              "type": "number"
+            },
+            "description": {
+              "description": "The description of the module. Typically from the generator.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "other-template": {
+      "properties": {
+        "template": {
+          "description": "The template file to copy and process.",
+          "enum": [
+            "other-template"
+          ]
+        },
+        "regions": {
+          "description": "The file regions to pre-populate.",
+          "type": "object",
+          "properties": {
+            "feature-import-remote": {
+              "description": "The feature imports from deps.ts that are pulled from remote sources.",
+              "$ref": "#/definitions/region"
+            },
+            "feature-import-local": {
+              "description": "The feature imports from local source files.",
+              "$ref": "#/definitions/region"
+            },
+            "type-import-remote": {
+              "description": "The type imports from deps.ts that are pulled from remote sources.",
+              "$ref": "#/definitions/region"
+            },
+            "type-import-local": {
+              "description": "The type imports from local source files.",
+              "$ref": "#/definitions/region"
+            },
+            "type-export-file": {
+              "description": "The file feature/type exports.",
+              "$ref": "#/definitions/region"
+            }
+          }
+        },
+        "data": {
+          "description": "The template data to interpolate into the template.",
+          "type": "object",
+          "properties": {
+            "year": {
+              "description": "The copyright start year. Typically from the generator.",
+              "type": "number"
+            },
+            "description": {
+              "description": "The description of the file contents. Typically from the generator.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "version-template": {
+      "properties": {
+        "template": {
+          "description": "The template file to copy and process.",
+          "enum": [
+            "version-template"
+          ]
+        },
+        "data": {
+          "description": "The template data to interpolate into the template.",
+          "type": "object",
+          "properties": {
+            "module": {
+              "description": "The name of the module. Typically from the generator.",
+              "type": "string"
+            },
+            "version": {
+              "description": "The version of the module. Typically from the generator.",
+              "type": "string"
+            },
+            "year": {
+              "description": "The copyright start year. Typically from the generator.",
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "region": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

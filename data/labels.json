@@ -1,0 +1,97 @@
+[
+  {
+    "name": "status: abandoned",
+    "color": "000000",
+    "description": "An issue that has been abandoned. i.e. duplicate, invalid for the repo, or won't be fixed."
+  },
+  {
+    "name": "status: accepted",
+    "color": "009800",
+    "description": "A reviewed issue that has picked up by a maintainer, but no work has started."
+  },
+  {
+    "name": "status: available",
+    "color": "bfe5bf",
+    "description": "An issue that has been reviewed, but not picked up by a maintainer."
+  },
+  {
+    "name": "status: blocked",
+    "color": "e11d21",
+    "description": "An issue delayed due to lack of response from submitter."
+  },
+  {
+    "name": "status: complete",
+    "color": "006b75",
+    "description": "An issue that has been completed and is awaiting submitter confirmation."
+  },
+  {
+    "name": "status: in progress",
+    "color": "cccccc",
+    "description": "A reviewed issue that has been picked up by a maintainer and is actively being worked on."
+  },
+  {
+    "name": "status: on hold",
+    "color": "e11d21",
+    "description": "An issue on-hold due to maintainer delay."
+  },
+  {
+    "name": "status: pending",
+    "color": "fef2c0",
+    "description": "An issue that has been created, but not reviewed."
+  },
+  {
+    "name": "status: review needed",
+    "color": "fbca04",
+    "description": "An issue that has been completed and is awaiting internal review."
+  },
+  {
+    "name": "status: revision needed",
+    "color": "e11d21",
+    "description": "An issue that need a revision based on internal review."
+  },
+  {
+    "name": "type: chore",
+    "color": "fbca04",
+    "description": "An issue related to code quality rather than an issue or feature.  i.e. code style, refactoring."
+  },
+  {
+    "name": "type: docs",
+    "color": "fbca04",
+    "description": "An issue related to documentation."
+  },
+  {
+    "name": "type: feature",
+    "color": "84b6eb",
+    "description": "A feature request issue."
+  },
+  {
+    "name": "type: issue",
+    "color": "e11d21",
+    "description": "An issue related to a bug."
+  },
+  {
+    "name": "type: perf",
+    "color": "fbca04",
+    "description": "A issue related to performance."
+  },
+  {
+    "name": "type: security",
+    "color": "e11d21",
+    "description": "An issue related to security."
+  },
+  {
+    "name": "type: testing",
+    "color": "fbca04",
+    "description": "An issue related to missing or incorrect tests."
+  },
+  {
+    "name": "👏 good first issue",
+    "color": "cc317c",
+    "description": "A good first issues that can assist others contributing for the first time."
+  },
+  {
+    "name": "🚨 critical",
+    "color": "e11d21",
+    "description": "An issue that is breaking things or related to security."
+  }
+]
