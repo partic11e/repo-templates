@@ -34,7 +34,7 @@ const msgFromInit = (init: {{className}}Init): string => {
   const { /*TODO: destructure init properties*/ } = init;
 
   switch(true) {
-    case (/*TODO: implement message cases */):
+    case (true):  //  TODO: implement message cases
       return "message";
     default:
       return DEFAULT_MSG;
@@ -47,7 +47,7 @@ const msgFromInit = (init: {{className}}Init): string => {
  * An interface describing the `init` properties for the
  * {@link {{className}}} class.
  */
- export interface {{className}}Init extends ExceptionInit {
+export interface {{className}}Init extends ExceptionInit {
   /*Exception init properties */
 }
 //  #endregion
@@ -55,7 +55,7 @@ const msgFromInit = (init: {{className}}Init): string => {
 /**
  * {{classDescription}}
  */
- export class {{className}}<
+export class {{className}}<
  T extends {{className}}Init = {{className}}Init,
 > extends Exception<T> {
   //  #region static-properties
@@ -70,34 +70,34 @@ const msgFromInit = (init: {{className}}Init): string => {
    * "{{defaultMessage}}", and no
    * exception init data.
    */
-   constructor();
-   /**
-    * Creates a new {@link {{className}}} with a message created based on
-    * {@link {{className}}Init} properties.
-    *
-    * @param init The {@link {{className}}Init} properties.
-    */
-   constructor(init: T);
-   /**
-    * Creates a new {@link {{className}}} with the supplied `message`,
-    * optionally with additional {@link {{className}}Init} properties.
-    *
-    * ***NOTE: `message` is not altered by the `init` properties.***
-    *
-    * @param message A message describing the exception.
-    * @param init The {@link {{className}}Init} properties.
-    */
-   constructor(message: string, init?: T);
-   constructor(msgOrInit: string | T = DEFAULT_MSG, maybeInit?: T) {
-     let message: string = msgOrInit as string;
-     let init: T | undefined = maybeInit;
+  constructor();
+  /**
+   * Creates a new {@link {{className}}} with a message created based on
+   * {@link {{className}}Init} properties.
+   *
+   * @param init The {@link {{className}}Init} properties.
+   */
+  constructor(init: T);
+  /**
+   * Creates a new {@link {{className}}} with the supplied `message`,
+   * optionally with additional {@link {{className}}Init} properties.
+   *
+   * ***NOTE: `message` is not altered by the `init` properties.***
+   *
+   * @param message A message describing the exception.
+   * @param init The {@link {{className}}Init} properties.
+   */
+  constructor(message: string, init?: T);
+  constructor(msgOrInit: string | T = DEFAULT_MSG, maybeInit?: T) {
+    let message: string = msgOrInit as string;
+    let init: T | undefined = maybeInit;
  
-     if (typeof msgOrInit !== "string") {
-       init = msgOrInit;
-       message = msgFromInit(init);
-     }
+    if (typeof msgOrInit !== "string") {
+      init = msgOrInit;
+      message = msgFromInit(init);
+    }
  
-     super(message, init);
+    super(message, init);
    }
   //  #endregion
 
