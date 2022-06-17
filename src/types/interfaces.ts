@@ -72,6 +72,14 @@ export interface IScaffold {
    * The structure to scaffold at the root (cwd) of a project.
    */
   root: IScaffoldFolder;
+  /**
+   * The description of the scaffold structure.
+   */
+  description: string;
+  /**
+   * The structure of the scaffold.
+   */
+  "expected-structure": string[];
 }
 
 /**
