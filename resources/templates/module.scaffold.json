@@ -32,19 +32,19 @@
               "_constants.ts": {
                 "template": "other-template",
                 "data": {
-                  "fileDescription": "Internal constants for use with the {{org}} library {{repo}} module."
+                  "fileDescription": "Internal constants for use with the {{libraryName}} library {{moduleName}} module."
                 }
               },
               "_utils.ts": {
                 "template": "other-template",
                 "data": {
-                  "fileDescription": "Internal utilities for use with the {{org}} library {{repo}} module."
+                  "fileDescription": "Internal utilities for use with the {{libraryName}} library {{moduleName}} module."
                 }
               },
               "mod.ts": {
                 "template": "mod-template",
                 "data": {
-                  "fileDescription": "Internal features for use with the {{org}} library {{repo}} module."
+                  "fileDescription": "Internal features for use with the {{libraryName}} library {{moduleName}} module."
                 },
                 "regions": {
                   "export-constants": [
@@ -62,7 +62,7 @@
               "mod.ts": {
                 "template": "mod-template",
                 "data": {
-                  "fileDescription": "The module-specific exceptions for the {{org}} library {{repo}} module."
+                  "fileDescription": "The module-specific exceptions for the {{libraryName}} library {{moduleName}} module."
                 }
               }
             }
@@ -72,19 +72,19 @@
               "enums.ts": {
                 "template": "other-template",
                 "data": {
-                  "fileDescription": "The global shared enums for the {{org}} library {{repo}} module."
+                  "fileDescription": "The global shared enums for the {{libraryName}} library {{moduleName}} module."
                 }
               },
               "interfaces.ts": {
                 "template": "other-template",
                 "data": {
-                  "fileDescription": "The global shared interfaces for the {{org}} library {{repo}} module."
+                  "fileDescription": "The global shared interfaces for the {{libraryName}} library {{moduleName}} module."
                 }
               },
               "mod.ts": {
                 "template": "mod-template",
                 "data": {
-                  "fileDescription": "The global shared enums, interfaces, and types for the {{org}} library {{repo}} module."
+                  "fileDescription": "The global shared enums, interfaces, and types for the {{libraryName}} library {{moduleName}} module."
                 },
                 "regions": {
                   "export-types": [
@@ -99,7 +99,7 @@
               "types.ts": {
                 "template": "other-template",
                 "data": {
-                  "fileDescription": "The global shared types for the {{org}} library {{repo}} module."
+                  "fileDescription": "The global shared types for the {{libraryName}} library {{moduleName}} module."
                 }
               }
             }
@@ -109,13 +109,13 @@
           "constants.ts": {
             "template": "other-template",
             "data": {
-              "fileDescription": "Public API constants for use with the {{org}} library {{repo}} module."
+              "fileDescription": "Public API constants for use with the {{libraryName}} library {{moduleName}} module."
             }
           },
           "mod.ts": {
             "template": "mod-template",
             "data": {
-              "fileDescription": "Source-level exports of the public API for the {{org}} library {{repo}} module."
+              "fileDescription": "Source-level exports of the public API for the {{libraryName}} library {{moduleName}} module."
             },
             "regions": {
               "export-types": [
@@ -145,7 +145,7 @@
       "deps.ts": {
         "template": "mod-template",
         "data": {
-          "fileDescription": "Dependencies for the {{org}} library {{repo}} module."
+          "fileDescription": "Dependencies for the {{libraryName}} library {{moduleName}} module."
         },
         "regions": {
           "export-features": [
@@ -156,13 +156,13 @@
       "dev_deps.ts": {
         "template": "mod-template",
         "data": {
-          "fileDescription": "Development dependencies for the {{org}} library {{repo}} module."
+          "fileDescription": "Development dependencies for the {{libraryName}} library {{moduleName}} module."
         }
       },
       "mod.ts": {
         "template": "mod-template",
         "data": {
-          "fileDescription": "Module-level exports of the public API for the {{org}} library {{repo}} module."
+          "fileDescription": "Module-level exports of the public API for the {{libraryName}} library {{moduleName}} module."
         },
         "regions": {
           "export-features": [

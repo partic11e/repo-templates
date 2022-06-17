@@ -6,7 +6,7 @@
   partic11e is a collection of easy-to-use utility and feature libraries for creating anything you want.
 </p>
 
-<h1 align="center">partic11e - {{repo}}<h1>
+<h1 align="center">{{org}} - {{repo}}<h1>
 
 <p align="center">
   <!-- Package description -->
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <sub>Built with ❤ by IntegerEleven and <a href="https://github.com/partic11e/{{repo}}/graphs/contributors">contributors</a></sub>
+  <sub>Built with ❤ by IntegerEleven and <a href="https://github.com/{{org}}/{{repo}}/graphs/contributors">contributors</a></sub>
 </p>
 
 <p align="center">
@@ -25,11 +25,11 @@
   <a href="CODE_OF_CONDUCT.md">
     <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat-square" />
   </a>
-  <a href="https://github.com/partic11e/{{repo}}/commits/main">
-    <img alt="Last GitHub commit" src="https://img.shields.io/github/last-commit/partic11e/{{repo}}.svg?style=flat-square" />
+  <a href="https://github.com/{{org}}/{{repo}}/commits/main">
+    <img alt="Last GitHub commit" src="https://img.shields.io/github/last-commit/{{org}}/{{repo}}.svg?style=flat-square" />
   </a>
-  <a href="https://github.com/partic11e/{{repo}}/releases">
-    <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/partic11e/{{repo}}?style=flat-square" />
+  <a href="https://github.com/{{org}}/{{repo}}/releases">
+    <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/{{org}}/{{repo}}?style=flat-square" />
   </a>
 </p>
 
@@ -59,13 +59,13 @@ To install, you simply need to re-export the library features with your
 `deps.ts` file.
 
 ```ts
-export { features, here } from "denopkg.com/partic11e/{module}/mod.ts";
+export { /*features*/ } from "https://denopkg.com/{{org}}/{{repo}}/mod.ts";
 ```
 
 and then import them from your `deps.ts` file into the files they are needed.
 
 ```ts
-import { features } from "../deps.ts";
+import { /*features*/ } from "../deps.ts";
 ```
 
 ## Usage
@@ -93,5 +93,5 @@ started.
 
 [(to top)](#table-of-contents)
 
-The MIT License (MIT) {{copyrightYear}} &middot; IntegerEleven. Refer to [LICENSE](./LICENSE)
+The MIT License (MIT) {{copyrightYear}} &middot; {{copyrightHolder}}. Refer to [LICENSE](./LICENSE)
 for details.

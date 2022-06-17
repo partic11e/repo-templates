@@ -1,7 +1,7 @@
 /**
  * Contains the {{abstract}}{{className}} class and associated types.
  * 
- * @copyright {{copyrightYear}} IntegerEleven. All rights reserved. MIT license.
+ * @copyright {{copyrightYear}} {{copyrightHolder}}. All rights reserved. MIT license.
  */
 
 //  #region feature-import-remote
