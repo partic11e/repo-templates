@@ -31,7 +31,7 @@ const DEFAULT_MSG = "{{defaultMessage}}";
  * @returns The message constructed from `init`.
  */
 const msgFromInit = (init: {{className}}Init): string => {
-  const { /*TODO: destructure init properties*/ } = init;
+  const { /* TODO: destructure init properties */ } = init;
 
   switch(true) {
     case (true):  //  TODO: implement message cases
@@ -48,7 +48,7 @@ const msgFromInit = (init: {{className}}Init): string => {
  * {@link {{className}}} class.
  */
 export interface {{className}}Init extends ExceptionInit {
-  /*Exception init properties */
+  /* TODO: Implement exception init properties */
 }
 //  #endregion
 
