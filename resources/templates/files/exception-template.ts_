@@ -1,0 +1,153 @@
+/**
+ * Contains the {{className}} class and associated types.
+ * 
+ * @copyright {{copyrightYear}} {{copyrightHolder}}. All rights reserved. MIT license.
+ */
+
+//  #region feature-import-remote
+import { Exception, ExceptionInit } from "../../deps.ts";
+//  #endregion
+
+//  #region feature-import-local
+//  #endregion
+
+//  #region type-import-remote
+//  #endregion
+
+//  #region type-import-local
+//  #endregion
+
+//  #region constants-local
+/**
+ * The default {@link {{className}}} message;
+ */
+const DEFAULT_MSG = "{{defaultMessage}}";
+
+/**
+ * Creates and returns an {@link {{className}}} message based on
+ * {@link {{className}}Init} properties.
+ *
+ * @param init The {@link {{className}}Init} information.
+ * @returns The message constructed from `init`.
+ */
+const msgFromInit = (init: {{className}}Init): string => {
+  const { /*TODO: destructure init properties*/ } = init;
+
+  switch(true) {
+    case (/*TODO: implement message cases */):
+      return "message";
+    default:
+      return DEFAULT_MSG;
+  }
+}
+//  #endregion
+
+//  #region type-export-file
+/**
+ * An interface describing the `init` properties for the
+ * {@link {{className}}} class.
+ */
+ export interface {{className}}Init extends ExceptionInit {
+  /*Exception init properties */
+}
+//  #endregion
+
+/**
+ * {{classDescription}}
+ */
+ export class {{className}}<
+ T extends {{className}}Init = {{className}}Init,
+> extends Exception<T> {
+  //  #region static-properties
+  //  #endregion
+  
+  //  #region static-methods
+  //  #endregion
+
+  //  #region constructors
+  /**
+   * Creates a new {@link {{className}}} with the default message,
+   * "{{defaultMessage}}", and no
+   * exception init data.
+   */
+   constructor();
+   /**
+    * Creates a new {@link {{className}}} with a message created based on
+    * {@link {{className}}Init} properties.
+    *
+    * @param init The {@link {{className}}Init} properties.
+    */
+   constructor(init: T);
+   /**
+    * Creates a new {@link {{className}}} with the supplied `message`,
+    * optionally with additional {@link {{className}}Init} properties.
+    *
+    * ***NOTE: `message` is not altered by the `init` properties.***
+    *
+    * @param message A message describing the exception.
+    * @param init The {@link {{className}}Init} properties.
+    */
+   constructor(message: string, init?: T);
+   constructor(msgOrInit: string | T = DEFAULT_MSG, maybeInit?: T) {
+     let message: string = msgOrInit as string;
+     let init: T | undefined = maybeInit;
+ 
+     if (typeof msgOrInit !== "string") {
+       init = msgOrInit;
+       message = msgFromInit(init);
+     }
+ 
+     super(message, init);
+   }
+  //  #endregion
+
+  //  #region properties
+  /**
+   * The exception code for the {@link {{className}}} class.
+   */
+  public readonly code: number = {{code}};
+
+  //  #endregion
+
+  //  #region interface-implementations
+  //  #endregion
+
+  //  #region abstract-methods
+  //  #endregion
+
+  //  #region method-overrides
+  //  #endregion
+
+  //  #region native-overrides
+  //  #endregion
+
+  //  #region methods
+  //  #endregion
+
+  //  #region _static-properties
+  //  #endregion
+  
+  //  #region _static-methods
+  //  #endregion
+  
+  //  #region _properties
+  //  #endregion
+
+  //  #region _method-overrides
+  //  #endregion
+  
+  //  #region _methods
+  //  #endregion
+  
+  //  #region #static-methods
+  //  #endregion
+
+  //  #region #static-properties
+  //  #endregion
+
+  //  #region #methods
+  //  #endregion
+  
+  //  #region #properties
+  //  #endregion
+}
