@@ -89,7 +89,7 @@ export interface IScaffoldFolder {
   /**
    * The sub-folders to scaffold within this folder.
    */
-  dirs?: { [key: string]: IScaffoldFolder };
+  folders?: { [key: string]: IScaffoldFolder };
   /**
    * The files to scaffold within this folder.
    */
