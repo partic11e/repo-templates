@@ -1,7 +1,7 @@
 /**
- * {{description}}
+ * {{fileDescription}}
  * 
- * @copyright {{year}} IntegerEleven. All rights reserved. MIT license.
+ * @copyright {{copyrightYear}} IntegerEleven. All rights reserved. MIT license.
  */
 
 //  #region export-types

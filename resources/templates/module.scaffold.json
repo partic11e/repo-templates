@@ -32,19 +32,19 @@
               "_constants.ts": {
                 "template": "other-template",
                 "data": {
-                  "description": "Internal constants for use with the partic11e library {{module}} module."
+                  "fileDescription": "Internal constants for use with the {{org}} library {{repo}} module."
                 }
               },
               "_utils.ts": {
                 "template": "other-template",
                 "data": {
-                  "description": "Internal utilities for use with the partic11e library {{module}} module."
+                  "fileDescription": "Internal utilities for use with the {{org}} library {{repo}} module."
                 }
               },
               "mod.ts": {
                 "template": "mod-template",
                 "data": {
-                  "description": "Internal features for use with the partic11e library {{module}} module."
+                  "fileDescription": "Internal features for use with the {{org}} library {{repo}} module."
                 },
                 "regions": {
                   "export-constants": [
@@ -62,7 +62,7 @@
               "mod.ts": {
                 "template": "mod-template",
                 "data": {
-                  "description": "The module-specific exceptions for the partic11e library {{module}} module."
+                  "fileDescription": "The module-specific exceptions for the {{org}} library {{repo}} module."
                 }
               }
             }
@@ -72,19 +72,19 @@
               "enums.ts": {
                 "template": "other-template",
                 "data": {
-                  "description": "The global shared enums for the partic11e library {{module}} module."
+                  "fileDescription": "The global shared enums for the {{org}} library {{repo}} module."
                 }
               },
               "interfaces.ts": {
                 "template": "other-template",
                 "data": {
-                  "description": "The global shared interfaces for the partic11e library {{module}} module."
+                  "fileDescription": "The global shared interfaces for the {{org}} library {{repo}} module."
                 }
               },
               "mod.ts": {
                 "template": "mod-template",
                 "data": {
-                  "description": "The global shared enums, interfaces, and types for the partic11e library {{module}} module."
+                  "fileDescription": "The global shared enums, interfaces, and types for the {{org}} library {{repo}} module."
                 },
                 "regions": {
                   "export-types": [
@@ -99,7 +99,7 @@
               "types.ts": {
                 "template": "other-template",
                 "data": {
-                  "description": "The global shared types for the partic11e library {{module}} module."
+                  "fileDescription": "The global shared types for the {{org}} library {{repo}} module."
                 }
               }
             }
@@ -109,13 +109,13 @@
           "constants.ts": {
             "template": "other-template",
             "data": {
-              "description": "Public API constants for use with the partic11e library {{module}} module."
+              "fileDescription": "Public API constants for use with the {{org}} library {{repo}} module."
             }
           },
           "mod.ts": {
             "template": "mod-template",
             "data": {
-              "description": "Source-level exports of the public API for the partic11e library {{module}} module."
+              "fileDescription": "Source-level exports of the public API for the {{org}} library {{repo}} module."
             },
             "regions": {
               "export-types": [
@@ -143,26 +143,26 @@
     },
     "files": {
       "deps.ts": {
-        "template": "version-template",
+        "template": "mod-template",
         "data": {
-          "description": "Dependencies for the partic11e library {{module}} module."
+          "fileDescription": "Dependencies for the {{org}} library {{repo}} module."
         },
         "regions": {
           "export-features": [
-            "export * from \"https://denopkg.com/partci11e/exceptions@dev/mod.ts\";"
+            "export * from \"https://denopkg.com/partic11e/exceptions@dev/mod.ts\";"
           ]
         }
       },
       "dev_deps.ts": {
         "template": "mod-template",
         "data": {
-          "description": "Development dependencies for the partic11e library {{module}} module."
+          "fileDescription": "Development dependencies for the {{org}} library {{repo}} module."
         }
       },
       "mod.ts": {
         "template": "mod-template",
         "data": {
-          "description": "Module-level exports of the public API for the partic11e library {{module}} module."
+          "fileDescription": "Module-level exports of the public API for the {{org}} library {{repo}} module."
         },
         "regions": {
           "export-features": [

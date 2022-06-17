@@ -21,7 +21,7 @@ import type {
   IClassTemplateFileData,
   IFunctionTemplateFileData,
   IScaffoldFile,
-  IScaffoldTemplateFileData,
+  IFileLevelTemplateFileData,
   IVersionTemplateFileData,
 } from "./interfaces.ts";
 //  #endregion
@@ -57,7 +57,7 @@ export type ScaffoldFunctionTemplateFile = IScaffoldFile<
 export type ScaffoldModTemplateFile = IScaffoldFile<
   "mod-template",
   Exclude<ScaffoldExportRegion, "type-export-file">,
-  IScaffoldTemplateFileData
+  IFileLevelTemplateFileData
 >;
 
 /**
@@ -67,7 +67,7 @@ export type ScaffoldModTemplateFile = IScaffoldFile<
 export type ScaffoldOtherTemplateFile = IScaffoldFile<
   "other-template",
   ScaffoldImportRegion | "type-export-file",
-  IScaffoldTemplateFileData
+  IFileLevelTemplateFileData
 >;
 
 /**

@@ -1,7 +1,7 @@
 /**
  * Contains the {{functionName}} function and associated types.
  * 
- * @copyright {{year}} IntegerEleven. All rights reserved. MIT license.
+ * @copyright {{copyrightYear}} IntegerEleven. All rights reserved. MIT license.
  */
 
 //  #region feature-import-remote
@@ -23,14 +23,13 @@
 //  #endregion
 
 //  #region export-features
-export default {{functionName}} = _{{functionName}};
+/**
+ * {{functionDescription}}
+ */
+export default {{async}}function {{functionName}} () {
+  throw new Error("{{functionName}} - Not implemented");
+}
 //  #endregion
 
 //  #region internal
-/**
- * {{description}}
- */
-{{async}}function _{{functionName}}() {
-  throw new Error("Not implemented");
-}
 //  #endregion

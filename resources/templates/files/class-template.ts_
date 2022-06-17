@@ -1,7 +1,7 @@
 /**
  * Contains the {{abstract}}{{className}} class and associated types.
  * 
- * @copyright {{year}} IntegerEleven. All rights reserved. MIT license.
+ * @copyright {{copyrightYear}} IntegerEleven. All rights reserved. MIT license.
  */
 
 //  #region feature-import-remote
@@ -23,7 +23,7 @@
 //  #endregion
 
 /**
- * {{description}}
+ * {{classDescription}}
  */
 export {{abstract}}class {{className}} {
   //  #region static-properties
@@ -38,7 +38,7 @@ export {{abstract}}class {{className}} {
    * default options.
    */
   constructor() {
-    throw new Error("Not implemented");
+    throw new Error("{{className}} - Not implemented");
   }
   //  #endregion
 

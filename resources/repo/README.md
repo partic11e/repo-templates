@@ -93,5 +93,5 @@ started.
 
 [(to top)](#table-of-contents)
 
-The MIT License (MIT) 2020 &middot; IntegerEleven. Refer to [LICENSE](./LICENSE)
+The MIT License (MIT) {{copyrightYear}} &middot; IntegerEleven. Refer to [LICENSE](./LICENSE)
 for details.

@@ -145,12 +145,7 @@ export interface IScaffoldTemplateFileData {
   /**
    * The copyright start year.
    */
-  year: number;
-  /**
-   * A description of the feature within the template file, or the file
-   * content itself as a whole.
-   */
-  description: string;
+  copyrightYear: number;
 }
 
 /**
@@ -165,6 +160,10 @@ export interface IClassTemplateFileData extends IScaffoldTemplateFileData {
    * The name of the class.
    */
   className: string;
+  /**
+   * A description of the class.
+   */
+  classDescription: string;
 }
 
 /**
@@ -179,6 +178,17 @@ export interface IFunctionTemplateFileData extends IScaffoldTemplateFileData {
    * The name of the function.
    */
   functionName: string;
+  /**
+   * A description of the function.
+   */
+  functionDescription: string;
+}
+
+export interface IFileLevelTemplateFileData extends IScaffoldTemplateFileData {
+  /**
+   * A description of the file contents.
+   */
+  fileDescription: string;
 }
 
 /**
@@ -189,6 +199,14 @@ export interface IVersionTemplateFileData extends IScaffoldTemplateFileData {
    * The name of the module.
    */
   moduleName: string;
+  /**
+   * The GitHub organization.
+   */
+  org: string;
+  /**
+   * The GitHub repository.
+   */
+  repo: string;
 }
 //  #endregion
 
