@@ -1,6 +1,5 @@
 <p align="center">
-  <!-- Update logo.svg -->
-  <img alt="partic11e logo" height="70" src="./logo.svg" />
+  <img alt="partic11e logo" height="70" src="https://raw.githubusercontent.com/partic11e/.github/main/profile/p11/logotype.svg" />
 </p>
 
 <p align="center">
