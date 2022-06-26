@@ -1,22 +1,20 @@
 <p align="center">
-  <img alt="partic11e logo" height="70" src="https://raw.githubusercontent.com/partic11e/.github/main/profile/p11/logotype.svg" />
+  <!-- Update log -->
+  <img alt="partic11e logo" height="70" src="./logo.svg" />
 </p>
 
 <p align="center">
-  partic11e is a collection of easy-to-use utility and feature libraries for creating anything you want.
+  <!-- Library description -->
 </p>
 
-<h1 align="center">{{org}} - {{repo}}<h1>
+<h1 align="center">{{org}} - {{repo}}</h1>
 
 <p align="center">
-  partic11e/repo-templates is a repository containing templates for use with the p11 CLI utility.
+  <!-- Module description -->
 </p>
 
 <p align="center">
-  <!-- 
-  Project links
-  TODO: Update when documentation is done
-  -->
+  <!-- Project links  -->
 </p>
 
 <p align="center">

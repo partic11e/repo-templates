@@ -1,21 +1,23 @@
-<!-- TODO: Update readme -->
 <p align="center">
   <!-- Update logo.svg -->
   <img alt="partic11e logo" height="70" src="https://raw.githubusercontent.com/partic11e/.github/main/profile/p11/logotype.svg" />
 </p>
 
 <p align="center">
-  <!-- library description -->
+  partic11e is a collection of easy-to-use utility and feature libraries for creating anything you want.
 </p>
 
-<h1 align="center">partic11e - repo-templates<h1>
+<h1 align="center">partic11e - repo-templates</h1>
 
 <p align="center">
-  <!-- Package description -->
+  partic11e/repo-templates is a repository containing templates for use with the p11 CLI utility.
 </p>
 
 <p align="center">
-  <!-- Project links -->
+  <!-- 
+  Project links
+  TODO: Update when documentation is done
+   -->
 </p>
 
 <p align="center">
