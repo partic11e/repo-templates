@@ -1,0 +1,35 @@
+/**
+ * Test the features of the {@link {{featureName}}}.
+ * 
+ * @copyright {{copyrightYear}} {{copyrightHolder}}. All rights reserved. MIT license.
+ */
+
+//  #region feature-import-remote
+import { Testing } from "../dev_deps.ts";
+//  #endregion
+
+//  #region feature-import-local
+//  #endregion
+
+//  #region type-import-remote
+//  #endregion
+
+//  #region type-import-local
+//  #endregion
+
+//  #region constants-local
+const { TestSuite, Test } = Testing.decorators;
+//  #endregion
+
+//  #region test-fixture-import
+//  #endregion
+
+//  #region tests
+@TestSuite("{{featureName}}")
+class {{featureName}}Test {
+  @Test("()")
+  public testWithNoArgs() {
+    /* TODO: Implement test */
+  }
+}
+//  #endregion

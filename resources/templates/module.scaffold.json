@@ -139,6 +139,19 @@
         }
       },
       "tests": {
+        "folders": {
+          "_fixtures": {},
+          "_utils": {
+            "files": {
+              "mod.ts": {
+                "template": "mod-template",
+                "data": {
+                  "fileDescription": "Exports of testing utilities for {{libraryName}} library {{moduleName}} module."
+                }
+              }
+            }
+          }
+        }
       }
     },
     "files": {
@@ -149,7 +162,7 @@
         },
         "regions": {
           "export-features": [
-            "export * from \"https://denopkg.com/partic11e/exceptions@dev/mod.ts\";"
+            "export * from \"https://denopkg.com/partic11e/exceptions/mod.ts\";"
           ]
         }
       },

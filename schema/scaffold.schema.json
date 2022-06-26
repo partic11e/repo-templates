@@ -214,8 +214,8 @@
               "description": "The copyright start year. Typically from the generator.",
               "type": "number"
             },
-            "description": {
-              "description": "The description of the module. Typically from the generator.",
+            "fileDescription": {
+              "description": "The description of the module file. Typically from the generator.",
               "type": "string"
             }
           }
@@ -264,7 +264,7 @@
               "description": "The copyright start year. Typically from the generator.",
               "type": "number"
             },
-            "description": {
+            "fileDescription": {
               "description": "The description of the file contents. Typically from the generator.",
               "type": "string"
             }

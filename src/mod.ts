@@ -1,7 +1,7 @@
 /**
  * Source-level exports.
  *
- * @copyright 2022 IntegerEleven. All rights reserved. MIT license.
+ * @copyright 2022 integer11. All rights reserved. MIT license.
  */
 
 //  #region export-types
