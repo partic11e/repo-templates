@@ -75,23 +75,16 @@ import { version } from "../deps.ts";
 You can specify a specific release or branch in the re-export:
 
 **Export from a specific release**\
-`export { TimeoutException } from "https://denopkg.com/partic11e/repo-templates@v0.1.0-alpha/mod.ts"`
+`export * from "https://denopkg.com/partic11e/repo-templates@v0.1.0-alpha/mod.ts"`
 
 **Export from a specific branch**\
-`export { TimeoutException } from "https://denopkg.com/partic11e/repo-templates@dev-fix-06145/mod.ts"`
+`export * from "https://denopkg.com/partic11e/repo-templates@dev-fix-06145/mod.ts"`
 
 **Export the latest release**\
-`export { TimeoutException } from "https://denopkg.com/partic11e/repo-templates@latest/mod.ts"`
+`export * from "https://denopkg.com/partic11e/repo-templates@latest/mod.ts"`
 
 > **Note that if no version is specified in the re-export, then it will pull
 > from the main branch, which as we always release on a merge with the main.**
-
-## Examples
-
-[(to top)](#table-of-contents)
-
-```ts
-```
 
 ## Contributing
 
